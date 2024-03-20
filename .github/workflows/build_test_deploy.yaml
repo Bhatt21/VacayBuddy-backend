@@ -10,9 +10,6 @@ jobs: # Jobs to be executed within the workflow
     steps: # Steps to be executed within the job
       - name: Checkout code # Step to checkout the repository code
         uses: actions/checkout@v3 # Using the official action to checkout the code
-        
-      - name: Install dependencies # Step to install npm dependencies
-        run: npm ci # Using npm ci for clean installation of dependencies
 
       - name: Run unit tests # Step to run unit tests
         run: echo "npm test" # Placeholder command for running tests (replace with actual test command)
