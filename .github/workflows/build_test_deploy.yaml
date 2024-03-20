@@ -18,6 +18,6 @@ jobs: # Jobs to be executed within the workflow
         run: echo "npm test" # Placeholder command for running tests (replace with actual test command)
       - name: Build and Deploy
         run: |
-            docker login --username Bhatt21 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
+            docker login --username bhatt21 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
             docker build -t ghcr.io/bhatt21/vacay-backend:latest --file Dockerfile .
             docker push ghcr.io/bhatt21/vacay-backend:latest
