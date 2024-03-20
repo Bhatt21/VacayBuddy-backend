@@ -27,7 +27,7 @@ passport.deserializeUser(function (obj, done) {
 passport.use(new GoogleStrategy({
         clientID: "243962731858-rb04b0dbelevp5blhc339io995opuhqu.apps.googleusercontent.com",
         clientSecret: "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",
-        callbackURL: "http://localhost:8080/o2auth/google/callback",
+        callbackURL: "https://vacay-backend-latest.onrender.com/o2auth/google/callback",
         passReqToCallback: true
     },
     function (request, accessToken, refreshToken, profile, done) {
